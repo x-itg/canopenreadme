@@ -1,4 +1,4 @@
-### DS402（CIA402） 驱动器
+### DS402（CIA402） 驱动器 
 ### SDO
 ### PDO   
 - 0x1800(CIA301协议)参数(TPDO)：周期发送/一次性发/同步发送 
@@ -93,3 +93,4 @@ char sendData[4]={3,0,0,0};//数据内容
 writeNetworkDict(SmasterObjdict_Data,0x01,0x6060,0x00,4,uint8,&sendData,0);
 while(getwriteResultNetworkDict(&masterObjdict_Data,0x01,&abortCode)==SDO_UPLOAD_IN_PROGRESS){;}//正在发送SDO 等待发送完成 01：1号节点
 ```
+from https://www.bilibili.com/read/cv12636652
